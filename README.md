@@ -22,7 +22,7 @@ The initial pattern constitutes the seed of the system. The first generation is 
 
 Users should take a look at the GameOfLifeTest class, where there is a main method that shows how to initializes a GameOfLife object and print the state of the board over the course of a play to the console. The game stops playing when a steady state is reached or the user-specified maximum turns is reached. 
 
-A steady state game is when a board doesn't change after a turn, which implies it will not change for all future turns. Trivial steady state is the board with all cells dead,a random configuration seems likely to go to this state. The example case in the GameOfLifeTest class demos a board that reaches a nontrivial steady state. It is also possible for the board to become periodic, in which case a steady state is never reached. 
+A steady state game is when a board doesn't change after a turn, which implies it will not change for all future turns. Trivial steady state is the board with all cells dead, but there are other steady states. The example case in the GameOfLifeTest class demos a board that reaches a nontrivial steady state. It is also possible for the board to become periodic, in which case a steady state is never reached. It's also possible for a game to niether repeat (periodic) nor die out (reach the trivial steady state). Check the wiki, for more on the latter.
 
 ###Plans for future of this program: 
 
