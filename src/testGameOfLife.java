@@ -45,17 +45,17 @@ public class testGameOfLife {
             "....###...###...." +
             "................." +
             ".................";
-        int X = 17;
-        int Y = 17;
+        int height = 17;
+        int width = 17;
         
-        char[][] tempArray = new char[X][Y];
+        char[][] tempArray = new char[height][width];
         
-        for(int i = 0; i < X; i ++) {
-            for(int j = 0; j < Y; j++) {
-                tempArray[i][j] = boardGiven2.charAt(i*X + j);
+        for(int i = 0; i < height; i ++) {
+            for(int j = 0; j < width; j++) {
+                tempArray[i][j] = boardGiven2.charAt(i*height + j);
             }
         }
-        board = new GameOfLifeBoard(boardGiven2,X,Y );
+        board = new GameOfLifeBoard(boardGiven2,height,width );
         
         System.out.println(board.toString());
         
@@ -70,7 +70,7 @@ public class testGameOfLife {
                 break;
             }
         }
-        // TODO code application logic here
+
     }
     
 }
